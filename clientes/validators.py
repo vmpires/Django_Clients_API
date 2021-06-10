@@ -6,7 +6,8 @@ def cpf_valido(numero_cpf):
     return cpf.validate(numero_cpf)
 
 def nome_valido(nome):
-    return nome.strip().isalpha()
+    nome = nome.strip()
+    return nome.isalpha()
 
 def rg_valido(rg):
     return len(rg) == 9
